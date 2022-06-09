@@ -29,7 +29,7 @@ public class ContatoRS {
         @Path("/{id}")
         @Produces(MediaType.APPLICATION_JSON)
         public Contato getContact(@PathParam("id") Long id) {
-            System.out.println("detalhe");
+            System.out.println("opa");
             return crmService
                     .findContact(id)
                     .map(
