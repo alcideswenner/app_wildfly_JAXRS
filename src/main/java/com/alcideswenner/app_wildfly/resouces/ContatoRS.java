@@ -19,7 +19,7 @@ public class ContatoRS {
         @GET
         @Produces(MediaType.APPLICATION_JSON)
         public List<Contato> getContacts() {
-            System.out.println("ola");
+            System.out.println("wenner");
             return crmService.getAllContacts().stream().map( ce ->
                     new Contato(ce.getContactId(), ce.getFirstName(), ce.getLastName(), ce.getCompanyName())
             ).collect(Collectors.toList());
